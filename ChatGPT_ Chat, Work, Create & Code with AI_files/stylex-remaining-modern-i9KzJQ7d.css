@@ -1,0 +1,348 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio pessoal de desenvolvedor.">
+    <title>Pedro Henrick | Portfólio</title>
+
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Ícones Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Arquivo CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Arquivo JavaScript -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="cabecalho">
+        <nav class="navegacao container">
+            <a href="#inicio" class="logo">PH<span>.</span></a>
+
+            <button class="botao-menu" id="botao-menu"
+                aria-label="Abrir menu" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <ul class="lista-menu" id="lista-menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button class="botao-tema" id="botao-tema"
+                aria-label="Alternar tema">
+                <i class="bi bi-moon-stars-fill"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INÍCIO -->
+        <section class="secao-inicio" id="inicio">
+            <div class="container conteudo-inicio">
+                <div class="texto-inicio">
+                    <p class="subtitulo">OLÁ! MEU NOME É</p>
+
+                    <h1>Pedro Henrick</h1>
+
+                    <h2>
+                        Sou <span id="texto-digitado">Desenvolvedor</span>
+                        <span class="cursor">|</span>
+                    </h2>
+
+                    <p class="descricao-inicio">
+                        Bem-vindo ao meu portfólio! Aqui você pode conhecer
+                        um pouco sobre mim, minhas habilidades e os projetos
+                        que desenvolvi durante minha jornada de aprendizado.
+                    </p>
+
+                    <div class="botoes-inicio">
+                        <a href="#projetos" class="botao botao-principal">
+                            Ver projetos
+                        </a>
+
+                        <a href="#contato" class="botao botao-secundario">
+                            Entre em contato
+                        </a>
+                    </div>
+
+                    <div class="redes-sociais">
+                        <a href="https://github.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="bi bi-github"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="bi bi-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="imagem-inicio">
+                    <div class="cartao-codigo">
+                        <div class="topo-codigo">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <pre><code><span class="codigo-roxo">const</span> desenvolvedor = {
+  nome: <span class="codigo-verde">"Pedro Henrick"</span>,
+  foco: <span class="codigo-verde">"Desenvolvimento Web"</span>,
+  aprendendo: [
+    <span class="codigo-verde">"HTML"</span>,
+    <span class="codigo-verde">"CSS"</span>,
+    <span class="codigo-verde">"JavaScript"</span>
+  ],
+  objetivo: <span class="codigo-verde">"Criar projetos"</span>
+};</code></pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SOBRE MIM -->
+        <section class="secao secao-sobre" id="sobre">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="subtitulo">CONHEÇA UM POUCO</p>
+                    <h2>Sobre <span>mim</span></h2>
+                </div>
+
+                <div class="conteudo-sobre">
+                    <div class="icone-sobre">
+                        <i class="bi bi-person-workspace"></i>
+                    </div>
+
+                    <div class="texto-sobre">
+                        <h3>Quem sou eu?</h3>
+
+                        <p>
+                            Meu nome é Pedro Henrick e sou estudante interessado
+                            em tecnologia e desenvolvimento de sistemas.
+                            Estou aprendendo a criar páginas e aplicações para
+                            a internet, explorando novas ferramentas e colocando
+                            meus conhecimentos em prática.
+                        </p>
+
+                        <p>
+                            Meu objetivo é continuar evoluindo na programação,
+                            desenvolver projetos criativos e construir uma
+                            carreira na área de tecnologia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- HABILIDADES -->
+        <section class="secao secao-habilidades" id="habilidades">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="subtitulo">O QUE ESTOU APRENDENDO</p>
+                    <h2>Minhas <span>habilidades</span></h2>
+                </div>
+
+                <div class="grade-habilidades">
+                    <article class="cartao-habilidade">
+                        <i class="bi bi-filetype-html"></i>
+                        <h3>HTML5</h3>
+                        <p>Estruturação de páginas web.</p>
+                    </article>
+
+                    <article class="cartao-habilidade">
+                        <i class="bi bi-filetype-css"></i>
+                        <h3>CSS3</h3>
+                        <p>Estilização e responsividade.</p>
+                    </article>
+
+                    <article class="cartao-habilidade">
+                        <i class="bi bi-filetype-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Interatividade e funcionalidades.</p>
+                    </article>
+
+                    <article class="cartao-habilidade">
+                        <i class="bi bi-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Organização e publicação de projetos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- FORMAÇÃO -->
+        <section class="secao secao-formacao" id="formacao">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="subtitulo">MINHA JORNADA</p>
+                    <h2>Formação <span>acadêmica</span></h2>
+                </div>
+
+                <div class="linha-formacao">
+                    <article class="item-formacao">
+                        <div class="marcador-formacao"></div>
+
+                        <div class="cartao-formacao">
+                            <span class="etiqueta">Em andamento</span>
+                            <h3>Ensino Médio</h3>
+                            <p class="instituicao">SENAC</p>
+                            <p>
+                                Desenvolvimento dos conhecimentos acadêmicos
+                                e preparação para novos desafios profissionais.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="item-formacao">
+                        <div class="marcador-formacao"></div>
+
+                        <div class="cartao-formacao">
+                            <span class="etiqueta">Em andamento</span>
+                            <h3>Desenvolvimento Web</h3>
+                            <p class="instituicao">Estudos e projetos pessoais</p>
+                            <p>
+                                Aprendizado de HTML, CSS e JavaScript por meio
+                                de exercícios e projetos práticos.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJETOS -->
+        <section class="secao secao-projetos" id="projetos">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="subtitulo">MEUS TRABALHOS</p>
+                    <h2>Meus <span>projetos</span></h2>
+                </div>
+
+                <div class="grade-projetos">
+                    <article class="cartao-projeto">
+                        <div class="icone-projeto">
+                            <i class="bi bi-window"></i>
+                        </div>
+
+                        <div class="conteudo-projeto">
+                            <h3>Portfólio pessoal</h3>
+                            <p>
+                                Site responsivo para apresentar minhas
+                                habilidades, formação e projetos.
+                            </p>
+
+                            <div class="etiquetas-projeto">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+
+                            <a href="https://github.com/" target="_blank"
+                                rel="noopener noreferrer" class="link-projeto">
+                                Ver repositório
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="cartao-projeto">
+                        <div class="icone-projeto">
+                            <i class="bi bi-code-slash"></i>
+                        </div>
+
+                        <div class="conteudo-projeto">
+                            <h3>Projeto em desenvolvimento</h3>
+                            <p>
+                                Espaço reservado para apresentar outro projeto
+                                que eu desenvolver durante meus estudos.
+                            </p>
+
+                            <div class="etiquetas-projeto">
+                                <span>Prática</span>
+                                <span>Aprendizado</span>
+                            </div>
+
+                            <a href="https://github.com/" target="_blank"
+                                rel="noopener noreferrer" class="link-projeto">
+                                Ver repositório
+                                <i class="bi bi-arrow-up-right"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTATO -->
+        <section class="secao secao-contato" id="contato">
+            <div class="container">
+                <div class="titulo-secao">
+                    <p class="subtitulo">VAMOS CONVERSAR?</p>
+                    <h2>Entre em <span>contato</span></h2>
+                </div>
+
+                <div class="conteudo-contato">
+                    <i class="bi bi-envelope-paper icone-contato"></i>
+
+                    <h3>Obrigado pela visita!</h3>
+
+                    <p>
+                        Entre em contato por e-mail ou conheça meus projetos
+                        no GitHub.
+                    </p>
+
+                    <!-- Troque pelo seu e-mail verdadeiro -->
+                    <a href="mailto:SEU_EMAIL@exemplo.com"
+                        class="botao botao-principal">
+                        <i class="bi bi-envelope"></i>
+                        Enviar e-mail
+                    </a>
+
+                    <a href="https://github.com/" target="_blank"
+                        rel="noopener noreferrer" class="link-github">
+                        <i class="bi bi-github"></i>
+                        Meu GitHub
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="rodape">
+        <div class="container conteudo-rodape">
+            <a href="#inicio" class="logo">PH<span>.</span></a>
+
+            <p>
+                © <span id="ano-atual"></span> Pedro Henrick.
+                Desenvolvido com HTML, CSS e JavaScript.
+            </p>
+
+            <a href="#inicio" class="link-topo">
+                Voltar ao início <i class="bi bi-arrow-up"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="botao-topo" id="botao-topo"
+        aria-label="Voltar ao topo">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+</body>
+</html>
